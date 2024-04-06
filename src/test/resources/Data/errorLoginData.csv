@@ -1,0 +1,2 @@
+gender,firstName,lastName,date,email,company,isSelected,password,confirmPassword,errorWrongPassword,errorWrongEmail
+,ioana,mutu,12 May 1985,ioanamutu1@yahoo.com,ioanatSrl,true,Matei1234,Matei1234,Login was unsuccessful. Please correct the errors and try again. The credentials provided are incorrect,Login was unsuccessful. Please correct the errors and try again. No customer account found

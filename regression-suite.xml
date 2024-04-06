@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+    <test name="Regression Tests">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.LoginTests"/>
+            <class name="tests.RegistrationTests"/>
+            <class name="tests.SearchTest"/>
+            <class name="tests.ShoppingCartTests"/>
+            <class name="tests.WishlistTests"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

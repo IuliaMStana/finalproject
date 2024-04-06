@@ -1,0 +1,2 @@
+gender,firstName,lastName,date,email,company,isSelected,password,confirmPassword
+M,ionut,ionescu,3 May 1990,ionescu8@yahoo.com,srl,true,Pass123,Pass123

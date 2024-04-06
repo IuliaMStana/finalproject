@@ -1,0 +1,4 @@
+gender,firstName,lastName,date,email,company,isSelected,password,confirmPassword,firstNameError,lastNameError,emailError,passwordError,confirmPasswordError
+,,,,,,false,,,First name is required.,Last name is required.,Email is required.,Password is required.,Password is required.
+,m,m,,a,,false,aa,aa,,,Wrong email,Password must meet the following rules: must have at least 6 characters,
+,m,m,,a@a.com,,false,pass123,pass1234,,,,,The password and confirmation password do not match.
