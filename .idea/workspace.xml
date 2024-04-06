@@ -4,52 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="233f6303-2541-466f-888b-5834306b6f70" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/regression-suite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smoke-suite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/database/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/objectModels/AccountLoginModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/objectModels/AccountRegisterModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/objectModels/LoginModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/objectModels/RegisterModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LogoutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/ProductPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/RegistrationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/SearchPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/ShoppingCartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/UtilityPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/WishlistPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testNG/DataProviderTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testNG/LogoutDataModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LogoutTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/SearchTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ShoppingCartTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/WishlistTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/BrowserUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/ConfigUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/ConstantUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/GenericUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Data/errorLoginData.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Data/errorsRegistrationData.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Data/logoutData.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Data/positiveLoginData.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Data/registrationData.cvs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
-    </list>
+    <list default="true" id="233f6303-2541-466f-888b-5834306b6f70" name="Changes" comment="proiect final" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -199,7 +154,20 @@
       <option name="presentableId" value="Default" />
       <updated>1710750806368</updated>
     </task>
+    <task id="LOCAL-00001" summary="proiect final">
+      <option name="closed" value="true" />
+      <created>1712380367088</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712380367089</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="proiect final" />
+    <option name="LAST_COMMIT_MESSAGE" value="proiect final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
