@@ -37,10 +37,6 @@ public class ShoppingCartPage extends BasePage{
         return Integer.parseInt(numericalValue);
     }
 
-    public void goToCart(){
-        goToCartButton.click();
-
-    }
     @Override
     public void waitForPageToLoad() {
         wait.until(ExpectedConditions.

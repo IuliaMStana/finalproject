@@ -61,7 +61,8 @@ public class RegisterPage extends BasePage {
     }
 
     public void register(String genderInput, String firstNameInput, String lastNameInput,
-                         String dateInput, String emailInput, String companyInput, boolean isSelected, String passwordInput,
+                         String dateInput, String emailInput, String companyInput, boolean isSelected,
+                         String passwordInput,
                          String confirmPasswordInput) {
         System.out.println("Select gender: " + genderInput);
         chooseGender(genderInput);

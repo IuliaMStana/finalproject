@@ -4,39 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="233f6303-2541-466f-888b-5834306b6f70" name="Changes" comment="proiect final updates">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dataProviders/LoginCVSDataProviders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dataProviders/RegisterAndLoginCVSDataProviders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dataProviders/RegisterCVSDataProviders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/RegisterTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/CSVUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/DatabaseUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/TestDataUtils.java" afterDir="false" />
+    <list default="true" id="233f6303-2541-466f-888b-5834306b6f70" name="Changes" comment="final updates made">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regression-suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/regression-suite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smoke-suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smoke-suite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dataProviders/DBDataProviders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/SearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testNG/DataProviderTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testNG/LogoutDataModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LogoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dataProviders/RegisterAndLoginCVSDataProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dataProviders/RegisterAndLoginCVSDataProviders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/objectModels/AccountRegisterModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objectModels/AccountRegisterModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/ShoppingCartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/ShoppingCartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ShoppingCartTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/WishlistTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/WishlistTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/BrowserUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ConfigUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ConfigUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Data/logoutData.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Data/positiveLoginData.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Data/registrationData.cvs" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Data/registerAndLoginData.cvs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/CSVUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/CSVUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +55,7 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTests.validateErrorsUsernameTest">
+  <component name="RunManager" selected="TestNG.RegisterTests.registrationErrorsTest">
     <configuration name="LoginTests.validateErrorsUsernameTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <extension name="coverage">
@@ -92,40 +68,6 @@
       <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
       <option name="METHOD_NAME" value="validateErrorsUsernameTest" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LogoutTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegisterTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RegisterTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -168,13 +110,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/iuliamarc/Documents/Automation/FinalProject/ProiectFinal/regression-suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/regression-suite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/iuliamarc/Documents/Automation/FinalProject/ProiectFinal/smoke-suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/smoke-suite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTests.validateErrorsUsernameTest" />
         <item itemvalue="TestNG.RegisterTests.registrationErrorsTest" />
+        <item itemvalue="TestNG./Users/iuliamarc/Documents/Automation/FinalProject/ProiectFinal/smoke-suite.xml" />
+        <item itemvalue="TestNG./Users/iuliamarc/Documents/Automation/FinalProject/ProiectFinal/regression-suite.xml" />
+        <item itemvalue="TestNG.LoginTests.validateErrorsUsernameTest" />
         <item itemvalue="TestNG.RegisterTests.validRegistrationTest" />
-        <item itemvalue="TestNG.RegisterTests" />
-        <item itemvalue="TestNG.LogoutTest" />
       </list>
     </recent_temporary>
   </component>
@@ -203,13 +165,22 @@
       <option name="project" value="LOCAL" />
       <updated>1712381818595</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="final updates made">
+      <option name="closed" value="true" />
+      <created>1713162170981</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713162170981</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="proiect final" />
     <MESSAGE value="proiect final updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="proiect final updates" />
+    <MESSAGE value="final updates made" />
+    <option name="LAST_COMMIT_MESSAGE" value="final updates made" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
