@@ -1,5 +1,4 @@
 package pageObjects;
-import objectModels.AccountRegisterModel;
 import objectModels.RegisterModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +11,7 @@ import org.testng.Assert;
 
 import java.util.Objects;
 
-public class RegistrationPage extends BasePage {
+public class RegisterPage extends BasePage {
     @FindBy(xpath = "//input[@type='radio' and @value='F']")
     private WebElement gender;
     @FindBy(xpath = "//input[@id='FirstName']")
@@ -38,7 +37,7 @@ public class RegistrationPage extends BasePage {
     @FindBy(xpath = "//a[@class='button-1 register-continue-button']")
     private WebElement continueButton;
 
-    public RegistrationPage(WebDriver driver) {
+    public RegisterPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
     }
@@ -160,6 +159,13 @@ public class RegistrationPage extends BasePage {
         wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.xpath("//span[@id='" + field + "-error']")));
         return driver.findElement(By.xpath("//span[@id='" + field + "-error']")).getText().replace("\n", " ");
+    }
+    public void register(RegisterModel registerModel) {
+        this.register(registerModel.getAccount().getGender(), registerModel.getAccount().getFirstName(),
+                registerModel.getAccount().getLastName(), registerModel.getAccount().getDate(),
+                registerModel.getAccount().getEmail(), registerModel.getAccount().getCompany(),
+                registerModel.getAccount().isSelected(), registerModel.getAccount().getPassword(),
+                registerModel.getAccount().getConfirmPassword());
     }
 }
 

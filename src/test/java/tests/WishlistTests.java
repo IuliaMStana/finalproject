@@ -14,12 +14,18 @@ public class WishlistTests extends BaseTest {
     WishlistPage wishlistPage;
     ProductPage productPage;
 
+    @BeforeMethod(groups = {"smoke", "regression"})
+    public void setUp() {
+        super.setUp();
+        driver.get(baseUrl);
+        homePage = new HomePage(driver);
+        homePage.waitForPageToLoad();
+    }
+
+
     @Test(groups = {"regression"})
     public void validateEmptyWishlistTest() {
         try {
-            driver.get(baseUrl);
-            homePage = new HomePage(driver);
-            homePage.waitForPageToLoad();
             wishlistPage = new WishlistPage(driver);
             homePage.goToWishList();
             String emptyWishlistText = wishlistPage.getErrorTextEmptyWishlist();
@@ -35,9 +41,6 @@ public class WishlistTests extends BaseTest {
     @Test(groups = {"smoke"})
     public void addToWishlistTest() {
         try {
-            driver.get(baseUrl);
-            homePage = new HomePage(driver);
-            homePage.waitForPageToLoad();
             wishlistPage = new WishlistPage(driver);
             int initialWishlistQuantity = wishlistPage.getWishlistQuantity();
             homePage.clickProductLink();
@@ -63,9 +66,6 @@ public class WishlistTests extends BaseTest {
     @Test(groups = {"regression"})
     public void removeFromWishlistTest() {
         try {
-            driver.get(baseUrl);
-            homePage = new HomePage(driver);
-            homePage.waitForPageToLoad();
             wishlistPage = new WishlistPage(driver);
             homePage.clickProductLink();
             productPage = new ProductPage(driver);

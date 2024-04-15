@@ -6,7 +6,6 @@ import java.nio.file.Paths;
 import java.util.Properties;
 
 public class ConfigUtils {
-    //public static final String DEFAULT_CONFIG_FILE = "src/test/resources/config.properties";
     public static String getGenericElement(String configFile,
                                            String propertyName,
                                            String defaultValue) {

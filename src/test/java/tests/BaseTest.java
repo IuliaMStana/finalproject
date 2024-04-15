@@ -1,5 +1,6 @@
 package tests;
 
+import objectModels.LoginModel;
 import objectModels.RegisterModel;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -8,7 +9,10 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import pageObjects.RegistrationPage;
+import pageObjects.HomePage;
+import pageObjects.LoginPage;
+import pageObjects.RegisterPage;
+import pageObjects.SearchPage;
 import utils.BrowserUtils;
 import utils.ConstantUtils;
 import utils.GenericUtils;
@@ -19,23 +23,21 @@ import java.io.IOException;
 public class BaseTest {
     protected WebDriver driver;
     private int screenshotIndex = 0;
+    String  baseUrl, browser;
+    HomePage homePage;
+    LoginPage loginPage;
+    RegisterPage registrationPage;
     String config = ConstantUtils.CONFIG_FILE;
-    String  baseUrl,dbHostname, dbUser,  dbPassword,  dbSchema, dbPort, browser;
-
 
     @BeforeMethod(groups = {"smoke", "regression"})
     public void setUp() {
         baseUrl = GenericUtils.getBaseUrl(config,
                 "protocol", "hostname");
         System.out.println("Use this baseurl:" + baseUrl);
-        dbHostname = GenericUtils.getDbHostname(config, "dbHostname");
-        dbUser = GenericUtils.getDbUser(config, "dbUser");
-        dbPassword = GenericUtils.getDbPassword(config, "dbPassword");
-        dbSchema = GenericUtils.getDbSchema(config, "dbSchema");
-        dbPort = GenericUtils.getDbPort(config, "dbPort");
-        //getBrowser("chrome");
         browser = GenericUtils.getBrowser(config, "browser");
         getBrowser(browser);
+        // Maximize the browser window
+        driver.manage().window().maximize();
     }
 
     public void getBrowser(String browserName) {
@@ -48,14 +50,7 @@ public class BaseTest {
                 driver.quit();
             }
         }
-    protected void register(RegisterModel registerModel) {
-        RegistrationPage registrationPage = new RegistrationPage(driver);
-        registrationPage.register(registerModel.getAccount().getGender(), registerModel.getAccount().getFirstName(),
-                registerModel.getAccount().getLastName(), registerModel.getAccount().getDate(),
-                registerModel.getAccount().getEmail(), registerModel.getAccount().getCompany(),
-                registerModel.getAccount().isSelected(), registerModel.getAccount().getPassword(),
-                registerModel.getAccount().getConfirmPassword());
-    }
+
         @AfterMethod(groups = {"smoke", "regression"})
         public void cleanUpAfterTest () {
             closeBrowserAtEnd();
@@ -77,7 +72,37 @@ public class BaseTest {
         }
         screenshotIndex++;
     }
+    protected void registerUser(RegisterModel registerModel){
+        driver.get(baseUrl);
+        homePage = new HomePage(driver);
+        homePage.waitForPageToLoad();
+        homePage.goToRegister();
+        registrationPage = new RegisterPage(driver);
+        registrationPage.waitForPageToLoad();
+        registrationPage.register(registerModel);
+    }
+    protected void loginUser(LoginModel loginModel) {
+        driver.get(baseUrl);
+        homePage = new HomePage(driver);
+        loginPage = new LoginPage(driver);
+        homePage.goToLogin();
+        loginPage.waitForPageToLoad();
+        loginPage.login(loginModel);
+    }
+    protected void loginWithRegisteredUser(RegisterModel registerModel) {
+        homePage = new HomePage(driver);
+        loginPage = new LoginPage(driver);
+        homePage.goToLogin();
+        loginPage.waitForPageToLoad();
+        loginPage.loginWithRegisteredUser(registerModel);
+    }
+    protected void navigateToSearchPage() {
+        driver.get(baseUrl);
+        SearchPage searchPage = new SearchPage(driver);
+        searchPage.waitForPageToLoad();
+    }
 }
+
 
 
 

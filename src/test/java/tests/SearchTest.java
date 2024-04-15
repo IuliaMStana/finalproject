@@ -1,7 +1,4 @@
 package tests;
-import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pageObjects.SearchPage;
 
@@ -11,9 +8,8 @@ public class SearchTest extends BaseTest {
     @Test(groups = {"smoke"})
     public void validSearchTest() {
         try {
-            driver.get(baseUrl);
-            SearchPage searchPage = new SearchPage(driver);
-            searchPage.waitForPageToLoad();
+            SearchPage searchPage=new SearchPage(driver);
+            navigateToSearchPage();
             searchPage.searchProduct("Apple");
             searchPage.verifyResults("Apple");
         } catch (Throwable e) {
@@ -21,13 +17,11 @@ public class SearchTest extends BaseTest {
             throw e;
         }
     }
-
     @Test(groups = {"regression"})
     public void validateNoResultsSearchMessage() {
         try {
-            driver.get(baseUrl);
-            SearchPage searchPage = new SearchPage(driver);
-            searchPage.waitForPageToLoad();
+            SearchPage searchPage=new SearchPage(driver);
+            navigateToSearchPage();
             searchPage.searchProduct("cat");
             searchPage.verifyNoResultsText();
         } catch (Throwable e) {
@@ -41,9 +35,8 @@ public class SearchTest extends BaseTest {
     @Test(groups = {"regression"})
     public void advancedSearchTest() {
         try {
-            driver.get(baseUrl);
-            SearchPage searchPage = new SearchPage(driver);
-            searchPage.waitForPageToLoad();
+            SearchPage searchPage=new SearchPage(driver);
+            navigateToSearchPage();
             searchPage.searchProduct("MacBook");
             searchPage.goToAdvancedSearch();
             searchPage.selectManufacturer("Apple");

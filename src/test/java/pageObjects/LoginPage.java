@@ -1,5 +1,6 @@
 package pageObjects;
-
+import objectModels.LoginModel;
+import objectModels.RegisterModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,6 +22,7 @@ public class LoginPage extends BasePage {
         PageFactory.initElements(driver, this);
 
     }
+
     @Override
     public void waitForPageToLoad() {
         email = wait.until(ExpectedConditions.
@@ -38,8 +40,13 @@ public class LoginPage extends BasePage {
         enterPassword(passwordInput);
         clickLoginButton();
     }
+    public void loginWithRegisteredUser(String emailInput, String passwordInput) {
+        enterEmail(emailInput);
+        enterPassword(passwordInput);
+        clickLoginButton();
+    }
 
-    public void enterEmail(String emailInput) {
+        public void enterEmail(String emailInput) {
         email.clear();
         email.sendKeys(emailInput);
     }
@@ -64,4 +71,13 @@ public class LoginPage extends BasePage {
                 "//div[@class='message-error validation-summary-errors']")));
         return driver.findElement(By.xpath("//div[@class='message-error validation-summary-errors']")).getText().replace("\n", " ");
     }
+
+    public void login(LoginModel loginModel) {
+        this.login(loginModel.getAccount().getEmail(), loginModel.getAccount().getPassword());
+    }
+
+    public void loginWithRegisteredUser(RegisterModel registerModel) {
+        this.loginWithRegisteredUser(registerModel.getAccount().getEmail(), registerModel.getAccount().getPassword());
+    }
 }
+

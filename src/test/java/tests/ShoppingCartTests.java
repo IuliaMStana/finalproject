@@ -9,13 +9,16 @@ import pageObjects.*;
 
 public class ShoppingCartTests extends BaseTest {
     HomePage homePage;
-
+    @BeforeMethod(groups = {"smoke", "regression"})
+    public void setUp() {
+        super.setUp();
+        driver.get(baseUrl);
+        homePage = new HomePage(driver);
+        homePage.waitForPageToLoad();
+    }
     @Test(groups = {"regression"})
     public void validateEmptyShoppingCartMessage() {
         try {
-            driver.get(baseUrl);
-            homePage = new HomePage(driver);
-            homePage.waitForPageToLoad();
             ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
             homePage.goToShoppingCart();
             String emptyShoppingCartText = shoppingCartPage.getEmptyShoppingCartText();
@@ -31,9 +34,6 @@ public class ShoppingCartTests extends BaseTest {
     @Test(groups = {"smoke"})
     public void addToShoppingCart() {
         try {
-            driver.get(baseUrl);
-            homePage = new HomePage(driver);
-            homePage.waitForPageToLoad();
             ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
             int initialShoppingCartQuantity = shoppingCartPage.getShoppingCartQuantity();
             homePage.clickProductLink();

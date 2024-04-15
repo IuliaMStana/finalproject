@@ -22,8 +22,6 @@ public class BrowserUtils {
                 System.out.println("Unsupported browser. We will switch default to chrome");
                 return new ChromeDriver();
             }
-
         }
     }
-
 }

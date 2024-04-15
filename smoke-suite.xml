@@ -10,7 +10,7 @@
         <classes>
             <class name="tests.LoginTests"/>
             <class name="tests.LogoutTest"/>
-            <class name="tests.RegistrationTests"/>
+            <class name="tests.RegisterTests"/>
             <class name="tests.SearchTest"/>
             <class name="tests.ShoppingCartTests"/>
             <class name="tests.WishlistTests"/>
