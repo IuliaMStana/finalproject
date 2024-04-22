@@ -37,10 +37,10 @@ public class SearchTest extends BaseTest {
         try {
             SearchPage searchPage=new SearchPage(driver);
             navigateToSearchPage();
-            searchPage.searchProduct("MacBook");
+            searchPage.searchProduct("Notebook");
             searchPage.goToAdvancedSearch();
             searchPage.selectManufacturer("Apple");
-            searchPage.verifyResults("MacBook");
+            searchPage.verifyResults("Notebook");
         } catch (Throwable e) {
             takeScreenshot();
             throw e;
